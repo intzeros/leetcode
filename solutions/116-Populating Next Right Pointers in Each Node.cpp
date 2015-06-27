@@ -44,9 +44,9 @@ class Solution {
 public:
     void connect(TreeLinkNode *root) {
         TreeLinkNode *p = root, *q;
-        while(p){
+        while(p){   //p指向树中每一层的第一个节点
             q = p;
-            while(q){
+            while(q){   //用q遍历每一层的节点
                 if(q->left){
                     q->left->next = q->right;
                     if(q->right){
