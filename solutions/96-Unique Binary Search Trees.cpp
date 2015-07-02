@@ -1,4 +1,4 @@
-/* ----------------- Solution 1: Iteration ----------------- */
+/* ----------------- Solution 1: Recursion ----------------- */
 /*int dp[100000];
 
 class Solution {
@@ -23,7 +23,7 @@ public:
 };*/
 
 
-/* ----------------- Solution 2: Recursion ----------------- */
+/* ----------------- Solution 2: Iteration ----------------- */
 class Solution {
 public:
     int numTrees(int n) {
