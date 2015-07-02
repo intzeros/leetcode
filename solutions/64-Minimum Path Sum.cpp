@@ -1,16 +1,16 @@
 /* ----------------- Solution 1: Recursion ----------------- */
-int dp[1000][1000];
+/*int dp[1000][1000];
 
 class Solution {
 public:
-	int DP(vector<vector<int> >& grid, int x, int y){
-		if(dp[x][y] != -1) return dp[x][y];
-		if(x == 0 && y == 0) return dp[x][y] = grid[0][0];
-		if(x == 0) return dp[x][y] = DP(grid, 0, y-1) + grid[x][y];
-		if(y == 0) return dp[x][y] = DP(grid, x-1, 0) + grid[x][y];
+    int DP(vector<vector<int> >& grid, int x, int y){
+        if(dp[x][y] != -1) return dp[x][y];
+        if(x == 0 && y == 0) return dp[x][y] = grid[0][0];
+        if(x == 0) return dp[x][y] = DP(grid, 0, y-1) + grid[x][y];
+        if(y == 0) return dp[x][y] = DP(grid, x-1, 0) + grid[x][y];
 
-		return dp[x][y] = min(DP(grid, x-1, y), DP(grid, x, y-1)) + grid[x][y];
-	}
+        return dp[x][y] = min(DP(grid, x-1, y), DP(grid, x, y-1)) + grid[x][y];
+    }
 
     int minPathSum(vector<vector<int> >& grid) {
         int m = grid.size();
@@ -19,7 +19,7 @@ public:
         memset(dp, -1, sizeof(dp));
         return DP(grid, m-1, n-1);
     }
-};
+};*/
 
 
 /* ----------------- Solution 2: Iteration ----------------- */
