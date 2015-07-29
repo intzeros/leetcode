@@ -20,6 +20,7 @@ public:
     }
 };*/
 
+
 /* ----------------- Solution 2: 滚动数组 ----------------- */
 class Solution {
 public:
@@ -31,7 +32,7 @@ public:
                     dp[0] = 1;
                 }else if(i == 0){
                     dp[j] = dp[j-1];
-                }else{
+                }else if(i != 0 && j != 0){
                     dp[j] += dp[j-1];
                 }
             }
