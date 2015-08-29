@@ -1,7 +1,7 @@
 class Solution {
 public:
     void solve(string &s, int used[]){
-        for(int i = 0; i < 26; i++) used[i] = 0;
+        memset(used, 0, sizeof(used) * 26);  // 注意这里要乘以 26！
         int i = 0;
         while(i < s.size()){
             used[s[i++] - 'a']++;
